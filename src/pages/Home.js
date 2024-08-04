@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-    <p>asdfgh</p>
+    <p>hai sayang</p>
     )
 }
 
