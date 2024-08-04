@@ -1,15 +1,23 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Navbar-style.css'
 
 const Navbar = () => {
+    const navigate = useNavigate();
+    // Fungsi untuk menangani klik pada gambar
+
+    const handleLogoClick = () => {
+        navigate('/'); // Mengarahkan ke halaman Home
+    }
+
     return (
-        <nav>
+        <div className='Navigation-Bar'>
         <ul>
-             <li><Link to="/">Home</Link></li>
-             <li><Link to="/About">About</Link></li>
-            
+            <li><img src="/Images/Logo_Kamiku.png" alt="" className='Kamiku_Image' onClick={handleLogoClick} /></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/About">About</Link></li>
+             
         </ul>
-        </nav>
+        </div>
 
     )
 }

@@ -1,16 +1,21 @@
+.Navigation-Bar{
+  width: 1fr;
+  height: 50px;
+  min-width: 360px;
+}
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0%;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #21ff76;
   }
   
-  li {
+li {
     float: left;
   }
   
-  li a {
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -18,6 +23,12 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
-    background-color: #111;
-  }
+li a:hover {
+    background-color: #00b947;
+}
+
+.Kamiku_Image {
+  margin-left: 10px;
+  margin-right: 20px;
+  height: 49px;
+}
