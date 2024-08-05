@@ -4,15 +4,23 @@
     margin: 0 auto; /* Center it */
 }
 
-.Home-Container .Home-Content {
+.Home-Container .Img-text-background {
     position: absolute; /* Position the background text */
     top: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
     width: 100%; /* Full width */
+    height: 100%;
     padding: 0; /* Some padding */
     text-align: center;
+}
+
+.img-text {
+    position: absolute; /* Membuat konten berada di atas gambar */
+    top: 50%; /* Posisikan di tengah vertikal */
+    left: 50%; /* Posisikan di tengah horizontal */
+    transform: translate(-50%, -50%); /* Pusatkan konten dengan transform */
 }
 
 .kgts-background {
