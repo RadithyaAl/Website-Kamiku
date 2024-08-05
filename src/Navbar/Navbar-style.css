@@ -1,34 +1,54 @@
-.Navigation-Bar{
+.Navigation-Bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1fr;
-  height: 50px;
+  height: 60px;
   min-width: 360px;
+  background-color: #21ff76;
+  margin: 0;
+  padding: 0 10px; /* Tambahkan padding jika diperlukan untuk memberikan ruang */
 }
-ul {
-    list-style-type: none;
-    margin: 0%;
-    padding: 0;
-    overflow: hidden;
-    background-color: #21ff76;
-  }
-  
-li {
-    float: left;
-  }
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-li a:hover {
-    background-color: #00b947;
+
+.Top-nav-left,
+.Top-nav-right {
+  display: flex;
+  align-items: center;
 }
 
 .Kamiku_Image {
-  margin-left: 10px;
-  margin-right: 20px;
-  height: 49px;
+  height: 50px;
+  cursor: pointer; /* Menambahkan kursor pointer untuk interaksi lebih baik */
+}
+
+.Tulisan_Kamiku {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 0 10px; /* Berikan margin antar elemen */
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #00b947;
 }

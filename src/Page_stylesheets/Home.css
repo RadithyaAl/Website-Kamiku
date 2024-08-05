@@ -1,0 +1,20 @@
+.Home-Container {
+    position: relative;
+    max-width: 1fr; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+
+.Home-Container .Home-Content {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 0; /* Some padding */
+    text-align: center;
+}
+
+.kgts-background {
+    width: 100%;
+}
