@@ -21,6 +21,7 @@
     top: 50%; /* Posisikan di tengah vertikal */
     left: 50%; /* Posisikan di tengah horizontal */
     transform: translate(-50%, -50%); /* Pusatkan konten dengan transform */
+    width: 80%;
 }
 
 .kgts-background {
