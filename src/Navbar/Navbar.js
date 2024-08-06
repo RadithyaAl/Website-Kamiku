@@ -1,14 +1,34 @@
 import { Link, useNavigate } from 'react-router-dom'
 import './Navbar-style.css'
+import { useRef } from 'react';
 
 const Navbar = () => {
     const navigate = useNavigate();
+    const sidenavRef = useRef(null);
   
     const handleLogoClick = () => {
       navigate('/'); // Mengarahkan ke halaman Home
     }
+    
+    // fungsi openNav dan closeNav berfungsi untuk membuka bilah navigasi dengan memanipulasi DOM react
+    const openNav = () => {
+    
+      if (sidenavRef.current) {
+        sidenavRef.current.style.width = "250px"; 
+      }
+      
+    };
+    
+    const closeNav = () => {
+
+      if (sidenavRef.current) {
+        sidenavRef.current.style.width = "0";
+      }
+    };
   
     return (
+      <>
+      
       <div className="Navigation-Bar">
         <div className="Top-nav-left">
           <img 
@@ -20,12 +40,16 @@ const Navbar = () => {
           <a className='Tulisan_Kamiku' href=''>KAMIKU</a>
         </div>
         <div className="Top-nav-right">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/About">About</Link></li>
-          </ul>
+            <span className='Tombol-Menu' onClick={openNav}>&#9776;</span>
         </div>
       </div>
+      
+      <div ref={sidenavRef} className="sidenav">
+          <a className="closebtn" onClick={closeNav}>&times;</a>
+          <Link to="/">Home</Link>
+          <Link to="/About">About</Link>
+      </div>
+      </>
     );
   }
   
