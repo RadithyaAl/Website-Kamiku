@@ -1,10 +1,16 @@
-.Home-Container {
+.Home-Style {
+    position: relative;
+    max-width: 1fr;
+    margin: 0 auto;
+}
+
+.Image-Container {
     position: relative;
     max-width: 1fr; /* Maximum width */
     margin: 0 auto; /* Center it */
 }
 
-.Home-Container .Img-text-background {
+.Image-Container .Img-text-background {
     position: absolute; /* Position the background text */
     top: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0); /* Fallback color */
@@ -27,3 +33,38 @@
 .kgts-background {
     width: 100%;
 }
+
+.Home-MainText {
+    display: block;
+    max-width: 1fr; /* Maximum width */
+    margin: 50px auto; /* Center it */
+    text-align: center;
+    width: 80%;
+}
+
+.VisiMisi-Container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Tiga kolom dengan lebar yang sama */
+    gap: 20px; /* Tambahkan jarak antar elemen */
+    margin: auto;
+    width: 80%;
+    position: relative;
+    padding: 10px;
+    padding-top: 50px;
+}
+.VisiMisi {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s; /* Tambahkan efek transisi */
+}
+
+.VisiMisi:hover {
+    transform: translateY(-10px); /* Efek hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan hover */
+}
+
