@@ -2,7 +2,8 @@ import '../Page_stylesheets/Home.css';
 
 const Home = () => {
     return (
-    <>  
+    <> 
+    <div className='Home-Style'>
     <div className="Image-Container">
         <img src="/Images/IMG_7197.JPG" alt="" className='kgts-background'/>
         <div className="Img-text-background">
@@ -29,6 +30,7 @@ const Home = () => {
                 <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus nascetur hendrerit. consectetuer adipiscing elit. consectetuer adipiscing elit.</p>
             </span>
         </div>
+    </div>
     </div>
     </>
     )
