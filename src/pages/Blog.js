@@ -6,7 +6,7 @@ const BlogKamiku = () => {
             <div className='perpus-block'>
                 <div>
                     <h3>Blog Kamiku</h3>
-                    <p>untuk sementara kalau mau nulis artikel atau berita gitu mending</p>
+                    <p>untuk sementara kalau mau nulis artikel atau berita gitu mending pake wordpress. jadi tombol dibawah bakal ngarahin ke blog wordpress. kaya blog kamiku yg tahun 2011-2014</p>
                     <a href='https://youtube.com' className='Go-to-Drive-Button'>Go to Wordpress</a>
                 </div>
             </div>
