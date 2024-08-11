@@ -4,6 +4,8 @@ import './App.css';
 import Home from "./pages/Home.js";
 import About from './pages/About.js';
 import Navbar from "./Navbar/Navbar.js";
+import PerpustakaanKamiku from './pages/PerpustakaanKamiku.js';
+import BlogKamiku from './pages/Blog.js';
 
 function App() {
   return(
@@ -13,6 +15,8 @@ function App() {
   <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/About' element={<About/>} />
+    <Route path='/PerpustakaanKamiku' element={<PerpustakaanKamiku/>} />
+    <Route path='/Blog' element={<BlogKamiku/>} />
   </Routes>
   </div>
   </BrowserRouter>

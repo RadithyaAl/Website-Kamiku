@@ -5,7 +5,7 @@
   width: 1fr;
   height: 60px;
   min-width: 360px;
-  background-color: rgb(33, 33, 200);
+  background-color: rgb(97, 155, 222);
   margin: 0;
   padding: 0 10px; /* Tambahkan padding jika diperlukan untuk memberikan ruang */
 }
@@ -26,7 +26,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgb(33, 33, 200);;
+  background-color: rgb(97, 155, 222);;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -36,7 +36,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: wheat;
   display: block;
   transition: 0.3s;
 }
@@ -77,6 +77,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 ul {

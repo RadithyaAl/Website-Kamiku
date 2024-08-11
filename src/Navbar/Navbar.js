@@ -37,7 +37,7 @@ const Navbar = () => {
             className="Kamiku_Image" 
             onClick={handleLogoClick} 
           />
-          <a className='Tulisan_Kamiku' href=''>KAMIKU</a>
+          <a className='Tulisan_Kamiku' onClick={handleLogoClick} href=''>KAMIKU</a>
         </div>
         <div className="Top-nav-right">
             <span className='Tombol-Menu' onClick={openNav}>&#9776;</span>
@@ -45,8 +45,10 @@ const Navbar = () => {
       </div>
       
       <div ref={sidenavRef} className="sidenav">
-          <a className="closebtn" onClick={closeNav}>&times;</a>
+          <a className="closebtn" onClick={closeNav} href=''>&times;</a>
           <Link to="/">Home</Link>
+          <Link to="/PerpustakaanKamiku">Arsip Kamiku</Link>
+          <Link to="/Blog">Blog</Link>
           <Link to="/About">About</Link>
       </div>
       </>
