@@ -43,29 +43,33 @@
     color: white;
 }
 
-.VisiMisi-Container {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr); /* Tiga kolom dengan lebar yang sama */
-    gap: 20px; /* Tambahkan jarak antar elemen */
+.Tabel-proker-container {
+    display: flex;
+    flex-direction: column; /* Membuat elemen tampil dalam kolom vertikal */
+    gap: 20px; /* Jarak antar item */
     margin: auto;
-    width: 80%;
-    position: relative;
-    padding: 10px;
-    padding-top: 50px;
+    width: 100%; /* Atur lebar kontainer sesuai kebutuhan */
+    max-width: 800px; /* Batas lebar maksimum */
 }
-.VisiMisi {
-    background-color: rgb(33, 33, 200);;
-    color: white;
-    text-align: center;
-    border-style: solid;
-    border-color: black;
+
+.Tabel-proker {
+    display: flex; /* Agar gambar dan deskripsi bisa bersebelahan */
+    align-items: center; /* Agar gambar dan deskripsi sejajar secara vertikal */
+    gap: 20px; /* Jarak antara gambar dan deskripsi */
+    background-color: blue; /* Warna latar belakang */
     padding: 10px;
     border-radius: 10px;
-    transition: transform 0.2s, box-shadow 0.2s; /* Tambahkan efek transisi */
 }
 
-.VisiMisi:hover {
-    transform: translateY(-10px); /* Efek hover */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan hover */
+.proker-background {
+    width: 100px; /* Lebar gambar */
+    height: 100px; /* Tinggi gambar (rasio 1:1) */
+    object-fit: cover; /* Agar gambar menyesuaikan kontainer */
+    border-radius: 5px;
 }
 
+.proker-deskripsi {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+}

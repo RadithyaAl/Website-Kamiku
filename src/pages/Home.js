@@ -1,32 +1,35 @@
 import '../Page_stylesheets/Home.css';
+import {Proker} from "../DataBase/Data_kamiku.js";
+import { AboutKAMIKU } from '../DataBase/Data_kamiku.js';
 
 const Home = () => {
+    const tentangkamiku = AboutKAMIKU.find(item => item.type === "tentangkamiku");
+
     return (
     <> 
     <div className='Home-Style'>
-    <div className="Image-Container">
-        <img src="/Images/IMG_7197.JPG" alt="" className='kgts-background'/>
-        <div className="Img-text-background">
-            <div className='img-text'>
-            <h1>Keluarga Mahasiswa ITB Kuningan</h1>
+        <div className="Image-Container">
+            <img src="/Images/IMG_7197.JPG" alt="" className='kgts-background'/>
+            <div className="Img-text-background">
+                <div className='img-text'>
+                <h1>Keluarga Mahasiswa ITB Kuningan</h1>
+                </div>
             </div>
         </div>
-    </div>
     <div className='Home-MainText'>
-        <p>KAMIKU (Keluarga Mahasiswa ITB Kuningan) adalah sebuah komunitas mahasiswa ITB yang berasal dari Kuningan, Jawa Barat. Tempat berkumpul, belajar, berkreasi dan pulang kampung. Rumah kebersamaan</p>
-        <div className='VisiMisi-Container'>
-            <span className='VisiMisi'>
-                <h3>VISI</h3>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus nascetur hendrerit. sdfsdfskdjfjhkjd</p>
-            </span>
-            <span className='VisiMisi'>
-                <h3>MISI</h3>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus nascetur hendrerit.</p>
-            </span>
-            <span className='VisiMisi'>
-                <h3>TUJUAN</h3>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus nascetur hendrerit. consectetuer adipiscing elit. consectetuer adipiscing elit.</p>
-            </span>
+        <p>{tentangkamiku.deskripsi}</p>
+        <h2 style={{ paddingTop: 20 }}>Proker KAMIKU</h2>
+        <div className='Tabel-proker-container'>
+                {Proker.map((item, index) => (
+                        <div key={index} className='Tabel-proker'>
+                            <img src={item.gambar} alt={item.proker} className='proker-background'/>
+                            <div className='proker-deskripsi'>
+                                <p>{item.proker}</p>
+                                <p>{item.deskripsi}</p>
+                            </div>
+                            
+                        </div>
+                    ))}
         </div>
     </div>
     </div>
