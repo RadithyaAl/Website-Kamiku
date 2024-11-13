@@ -1,12 +1,19 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 .Home-Style {
     position: relative;
-    width: 100%;
-    max-width: 1200px; /* Sesuaikan dengan max-width navbar jika ada */
+    width: 100%; /* Memastikan halaman mengisi seluruh lebar layar */
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;
-    box-sizing: border-box; /* Tambahkan ini */
-  }
+    box-sizing: border-box;
+    height: 100%;
+}
+
   
 
 .Image-Container {
@@ -35,6 +42,7 @@
 .kgts-background {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .Home-MainText {
