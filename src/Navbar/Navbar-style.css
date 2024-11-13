@@ -2,47 +2,76 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1fr;
+  width: 100%;
   height: 60px;
-  min-width: 360px;
-  background-color: rgb(97, 155, 222);
-  margin: 0;
-  padding: 0 10px; /* Tambahkan padding jika diperlukan untuk memberikan ruang */
+  background-color: #2d3748;
+  padding: 0 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Tambahkan ini */
 }
+
 
 .Top-nav-left {
   display: flex;
   align-items: center;
 }
+
 .Top-nav-right {
+  display: flex;
   align-items: center;
-  padding-right: 20px;
 }
 
+.Kamiku_Image {
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.Tulisan_Kamiku {
+  font-size: 24px;
+  color: #f7fafc; /* Warna putih terang untuk teks */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Tombol-Menu {
+  font-size: 26px;
+  cursor: pointer;
+  color: #f7fafc; /* Warna putih terang */
+  transition: color 0.3s ease;
+}
+
+.Tombol-Menu:hover {
+  color: #e2e8f0; /* Warna sedikit lebih terang saat hover */
+}
+
+/* Style untuk side navigation */
 .sidenav {
   height: 100%;
-  width: 0px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgb(97, 155, 222);;
+  background-color: #2d3748;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: width 0.5s ease;
   padding-top: 60px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: wheat;
+  padding: 10px 40px;
+  font-size: 20px;
+  color: #f7fafc;
   display: block;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: color 0.3s, background 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #e2e8f0;
+  background-color: rgba(255, 255, 255, 0.1); /* Efek hover dengan latar belakang transparan */
 }
 
 .sidenav .closebtn {
@@ -50,55 +79,30 @@
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  color: #f7fafc;
   cursor: pointer;
+  transition: color 0.3s;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.sidenav .closebtn:hover {
+  color: #e2e8f0;
 }
 
-.Tombol-Menu {
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-}
+/* Responsivitas */
+@media screen and (max-width: 768px) {
+  .Navigation-Bar {
+    padding: 0 15px;
+  }
 
-.Kamiku_Image {
-  height: 50px;
-  cursor: pointer; /* Menambahkan kursor pointer untuk interaksi lebih baik */
-}
+  .Tulisan_Kamiku {
+    font-size: 20px;
+  }
 
-.Tulisan_Kamiku {
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-}
+  .Tombol-Menu {
+    font-size: 28px;
+  }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-}
-
-li {
-  margin: 0 10px; /* Berikan margin antar elemen */
-  list-style-type: none;
-}
-
-li a {
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #00b947;
+  .sidenav a {
+    font-size: 18px;
+  }
 }

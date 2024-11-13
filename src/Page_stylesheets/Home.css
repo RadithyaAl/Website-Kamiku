@@ -1,75 +1,124 @@
 .Home-Style {
     position: relative;
-    max-width: 1fr;
+    width: 100%;
+    max-width: 1200px; /* Sesuaikan dengan max-width navbar jika ada */
     margin: 0 auto;
-}
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Tambahkan ini */
+  }
+  
 
 .Image-Container {
     position: relative;
-    max-width: 1fr; /* Maximum width */
-    margin: 0 auto; /* Center it */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .Image-Container .Img-text-background {
-    position: absolute; /* Position the background text */
-    top: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    width: 100%;
     height: 100%;
-    padding: 0; /* Some padding */
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-text {
-    position: absolute; /* Membuat konten berada di atas gambar */
-    top: 50%; /* Posisikan di tengah vertikal */
-    left: 50%; /* Posisikan di tengah horizontal */
-    transform: translate(-50%, -50%); /* Pusatkan konten dengan transform */
-    width: 80%;
+    text-align: center;
+    color: white;
 }
 
 .kgts-background {
     width: 100%;
+    height: auto;
 }
 
 .Home-MainText {
-    display: block;
-    max-width: 1fr; /* Maximum width */
-    margin: 50px auto; /* Center it */
+    max-width: 100%;
+    margin: 50px auto;
     text-align: center;
     width: 80%;
-    color: white;
+    color: #333; /* Warna teks gelap */
 }
 
+/* CSS untuk Proker KAMIKU */
+/* Container grid untuk proker */
 .Tabel-proker-container {
-    display: flex;
-    flex-direction: column; /* Membuat elemen tampil dalam kolom vertikal */
-    gap: 20px; /* Jarak antar item */
-    margin: auto;
-    width: 100%; /* Atur lebar kontainer sesuai kebutuhan */
-    max-width: 800px; /* Batas lebar maksimum */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 1200px;
 }
 
+/* Gaya kartu untuk proker */
 .Tabel-proker {
-    display: flex; /* Agar gambar dan deskripsi bisa bersebelahan */
-    align-items: center; /* Agar gambar dan deskripsi sejajar secara vertikal */
-    gap: 20px; /* Jarak antara gambar dan deskripsi */
-    background-color: blue; /* Warna latar belakang */
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.Tabel-proker:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .proker-background {
-    width: 100px; /* Lebar gambar */
-    height: 100px; /* Tinggi gambar (rasio 1:1) */
-    object-fit: cover; /* Agar gambar menyesuaikan kontainer */
-    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
+/* Deskripsi proker agar mirip gaya artikel */
 .proker-deskripsi {
-    color: white;
+    color: #333;
     text-align: left;
     font-size: 16px;
+    line-height: 1.6;
+}
+
+.proker-deskripsi p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.proker-deskripsi p:last-child {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Responsivitas untuk mobile */
+@media (max-width: 768px) {
+    .Home-Style, .Home-MainText {
+        width: 90%;
+    }
+
+    .img-text {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .Tabel-proker-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .proker-background {
+        height: 150px;
+    }
 }
