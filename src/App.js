@@ -6,6 +6,7 @@ import About from './pages/About.js';
 import Navbar from "./Navbar/Navbar.js";
 import PerpustakaanKamiku from './pages/PerpustakaanKamiku.js';
 import BlogKamiku from './pages/Blog.js';
+import Footer from './Footer/Footer.js';
 
 function App() {
   return(
@@ -18,6 +19,7 @@ function App() {
     <Route path='/PerpustakaanKamiku' element={<PerpustakaanKamiku/>} />
     <Route path='/Blog' element={<BlogKamiku/>} />
   </Routes>
+  <Footer/>
   </div>
   </BrowserRouter>
   )

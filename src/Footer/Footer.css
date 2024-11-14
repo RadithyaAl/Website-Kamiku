@@ -1,0 +1,23 @@
+/* Footer.css */
+.footer-container {
+    background-color: #2d3748; /* Sesuaikan warna latar sesuai tema Anda */
+    color: #f7fafc; /* Teks putih terang */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.footer-container a {
+    color: #e2e8f0; /* Warna link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-container a:hover {
+    color: #63b3ed; /* Warna link saat hover */
+}
