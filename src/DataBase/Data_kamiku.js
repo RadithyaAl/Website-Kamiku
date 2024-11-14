@@ -9,12 +9,14 @@ export const Proker = [
     {
         "proker" : "KGTS",
         "deskripsi" : "Lorem Ipsum dolor sit amet",
-        "gambar" : "/Images/Logo_Kamiku.png"
+        "gambar" : "/Images/Logo_Kamiku.png",
+        "link_to" : "https://google.com"
     },
     {
         "proker" : "Syukuran Wisuda",
         "deskripsi" : "Lorem Ipsum dolor sit amet",
-        "gambar" : "/Images/Logo_Kamiku.png"
+        "gambar" : "/Images/Logo_Kamiku.png",
+        "link_to" : "/PerpustakaanKamiku"
     },
     {
         "proker" : "Welcoming party",

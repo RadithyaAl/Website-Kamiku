@@ -8,6 +8,7 @@ const Home = () => {
     return (
     <> 
     <div className='Home-Style'>
+
         <div className="Image-Container">
             <img src="/Images/IMG_7197.JPG" alt="" className='kgts-background'/>
             <div className="Img-text-background">
@@ -16,12 +17,13 @@ const Home = () => {
                 </div>
             </div>
         </div>
+
     <div className='Home-MainText'>
         <p>{tentangkamiku.deskripsi}</p>
         <h2 style={{ paddingTop: 20 }}>Proker KAMIKU</h2>
         <div className='Tabel-proker-container'>
                 {Proker.map((item, index) => (
-                        <div key={index} className='Tabel-proker'>
+                        <div key={index} className='Tabel-proker' onClick={() => (window.location.href = item.link_to)}>
                             <img src={item.gambar} alt={item.proker} className='proker-background'/>
                             <div className='proker-deskripsi'>
                                 <p>{item.proker}</p>
