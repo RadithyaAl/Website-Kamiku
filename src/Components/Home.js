@@ -25,7 +25,7 @@ const Home = () => {
         <h2 style={{ paddingTop: 20 }}>Proker KAMIKU</h2>
         <div className='Tabel-proker-container'>
                 {Proker.map((item, index) => (
-                        <div key={index} className='Tabel-proker'  onClick={() => navigate(`/articles/${item.id}`)}>
+                        <div key={index} className='Tabel-proker'  onClick={() => navigate(`/proker/${item.id}`)}>
                             <img src={item.gambar} alt={item.proker} className='proker-background'/>
                             <div className='proker-deskripsi'>
                                 <p>{item.proker}</p>

@@ -1,24 +1,28 @@
 export const Artikel = [
     {
         "id": "kgts", // Unique identifier for dynamic routing
-        "proker": "KGTS",
+        "Title": "KGTS",
+        "gambar": "/Images/Logo_Kamiku.png",
         "P1": "Lorem Ipsum dolor sit amet blbalbalblalblablalbla",
         "P2": "Lorem Ipsum dolor sit amet blbalbalblalblablalbla",
-        "gambar": "/Images/Logo_Kamiku.png",
+        
         
     },
     {
         "id": "syukuran-wisuda",
-        "proker": "Syukuran Wisuda",
-        "deskripsi": "Lorem Ipsum dolor sit amet",
+        "Title": "Syukuran Wisuda",
         "gambar": "/Images/Logo_Kamiku.png",
-        "link_to": "/PerpustakaanKamiku" // Internal link to navigate
+        "deskripsi": "Lorem Ipsum dolor sit amet",
+        "P1": "Lorem Ipsum dolor sit amet blbalbalblalblablalbla",
+        "P2": "Lorem Ipsum dolor sit amet blbalbalblalblablalbla",
+ 
     },
     {
         "id": "welcoming-party",
-        "proker": "Welcoming Party",
-        "deskripsi": "Lorem Ipsum dolor sit amet",
+        "title": "Welcoming Party",
         "gambar": "/Images/Logo_Kamiku.png",
-        "link_to": "/articles/welcoming-party"
+        "deskripsi": "Lorem Ipsum dolor sit amet",
+        "P1": "Lorem Ipsum dolor sit amet blbalbalblalblablalbla",
+        "P2": "Lorem Ipsum dolor sit amet blbalbalblalblablalbla",
     }
 ];

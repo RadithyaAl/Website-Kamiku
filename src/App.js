@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar.js";
 import PerpustakaanKamiku from './Components/PerpustakaanKamiku.js';
 import BlogKamiku from './Components/Blog.js';
 import Footer from './Components/Footer.js';
-import Article from './Components/Article.js';
+import ProkerKamiku from './Components/ProkerKamiku.js';
 
 function App() {
   return(
@@ -19,7 +19,7 @@ function App() {
     <Route path='/About' element={<About/>} />
     <Route path='/PerpustakaanKamiku' element={<PerpustakaanKamiku/>} />
     <Route path='/Blog' element={<BlogKamiku/>} />
-    <Route path="/articles/:id" element={<Article />} />
+    <Route path="/proker/:id" element={<ProkerKamiku />} />
   </Routes>
   <Footer/>
   </div>
