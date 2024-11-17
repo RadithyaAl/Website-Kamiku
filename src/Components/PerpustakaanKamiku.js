@@ -6,8 +6,8 @@ const PerpustakaanKamiku = () => {
             <div className='perpus-block'>
                 <div>
                     <h3>Arsip Kamiku</h3>
-                    <p>ini arsip kamiku. mencet tombol dibawah bakal ngarahin ke drive</p>
-                    <a href='https://youtube.com' className='Go-to-Drive-Button'>Go to Drive</a>
+                    <p>klik tombol di bawah untuk mengakses drive KAMIKU</p>
+                    <a href='https://youtu.be/dQw4w9WgXcQ?si=ThNZp7zSfN9BY0dE' className='Go-to-Drive-Button'>Go to Drive</a>
                 </div>
             </div>
         </div>

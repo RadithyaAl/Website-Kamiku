@@ -21,3 +21,13 @@
 .footer-container a:hover {
     color: #63b3ed; /* Warna link saat hover */
 }
+
+.social-media-links a {
+    margin: 0 15px; /* Adds horizontal space between icons */
+    text-decoration: none;
+    padding: 10px; /* Adds padding inside the links */
+  }
+  
+  .social-media-links a:hover {
+    color: #0056b3; /* Example color on hover */
+  }

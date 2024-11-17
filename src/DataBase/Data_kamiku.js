@@ -7,18 +7,21 @@ export const AboutKAMIKU = [
 
 export const Proker = [
     {
+        "id" : "kgts",
         "proker" : "KGTS",
         "deskripsi" : "Lorem Ipsum dolor sit amet",
         "gambar" : "/Images/Logo_Kamiku.png",
         "link_to" : "https://google.com"
     },
     {
+        "id" : "syukuran-wisuda",
         "proker" : "Syukuran Wisuda",
         "deskripsi" : "Lorem Ipsum dolor sit amet",
         "gambar" : "/Images/Logo_Kamiku.png",
         "link_to" : "/PerpustakaanKamiku"
     },
     {
+        "id" : "welcoming-party",
         "proker" : "Welcoming party",
         "deskripsi" : "Lorem Ipsum dolor sit amet",
         "gambar" : "/Images/Logo_Kamiku.png"

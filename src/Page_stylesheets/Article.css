@@ -1,0 +1,87 @@
+/* General body and container styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.article-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+/* Header and title styles */
+.article-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.article-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Image container styling */
+.image-container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Text content styling */
+.article-content {
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.article-content p {
+    margin-bottom: 15px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .article-container {
+        padding: 10px;
+    }
+
+    .article-header h1 {
+        font-size: 2rem;
+    }
+
+    .article-header p {
+        font-size: 1rem;
+    }
+
+    .image-container img {
+        border-radius: 8px;
+    }
+
+    .article-content {
+        font-size: 1rem;
+    }
+}
