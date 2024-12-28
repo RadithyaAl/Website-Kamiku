@@ -48,7 +48,7 @@ const Navbar = () => {
           <a className="closebtn" onClick={closeNav}>&times;</a>
           <Link to="/">Home</Link>
           <Link to="/PerpustakaanKamiku">Arsip Kamiku</Link>
-          <Link to="/Blog">Blog</Link>
+          {/*<Link to="/Blog">Blog</Link> bagian blok dihilangkan dulu*/}
           <Link to="/About">About</Link>
       </div>
       </>

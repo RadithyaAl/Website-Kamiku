@@ -1,0 +1,50 @@
+.ImageAbout {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Memusatkan gambar */
+    display: block;
+}
+
+
+.About-MainText {
+    max-width: 90%;
+    margin: 50px auto; /* Memusatkan elemen secara horizontal */
+    color: #333; /* Warna teks gelap */
+    text-align: justify; /* Memusatkan teks */
+    display: flex; /* Membuat elemen menjadi flexbox */
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    align-items: center; /* Memusatkan elemen di tengah secara horizontal */
+    justify-content: center;
+}
+.About-MainText h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+.About-MainText h2{
+    text-align: center;
+}
+
+
+
+.About-MainText ul {
+    list-style-type: disc; /* Kembali ke bullet bawaan */
+    padding-left: 20px; /* Tambahkan padding kiri untuk ruang bullet */
+    margin: 20px auto;
+    max-width: 600px; /* Membatasi lebar daftar */
+    text-align: left; /* Teks rata kiri untuk daftar */
+}
+
+.About-MainText ul li {
+    margin-bottom: 15px; /* Jarak antar item */
+    font-size: 16px; /* Ukuran font */
+    line-height: 1.6; /* Memberikan ruang antar baris */
+    color: #333; /* Warna teks */
+}
+
+
+.About-MainText ul li::before {
+    content: ''; /* Tambahkan ikon sebelum teks */
+    color: #00509e; /* Warna ikon */
+    font-size: 18px; /* Ukuran ikon */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+}

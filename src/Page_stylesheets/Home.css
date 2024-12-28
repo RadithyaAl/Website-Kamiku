@@ -129,3 +129,78 @@ body, html {
         height: 150px;
     }
 }
+
+.Visi-Misi-container {
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    color: #333;
+}
+
+.Visi-Misi-container h2 {
+    font-size: 24px;
+    color: #00509e; /* Warna biru tua */
+    margin-bottom: 10px;
+}
+
+.Visi-Misi-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.Visi-Misi-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.Visi-Misi-container ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+
+.Pengumuman-Container {
+    margin: 50px auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.Pengumuman-Container h2 {
+    font-size: 24px;
+    color: #00509e; /* Warna biru tua */
+    margin-bottom: 40px;
+}
+
+.Pengumuman-Link {
+    display: inline-block;
+    background-color: #00509e; /* Warna biru tua */
+    color: white;
+    padding: 15px 23px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 50px;
+}
+
+.Pengumuman-Link:hover {
+    background-color: #003f7d; /* Warna biru lebih gelap */
+    transform: translateY(-3px);
+}
+
+.Pengumuman-Link:active {
+    background-color: #002f5a; /* Warna lebih gelap saat ditekan */
+    transform: translateY(0);
+}

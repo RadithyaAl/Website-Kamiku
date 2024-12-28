@@ -26,6 +26,13 @@ const ProkerKamiku = () => {
                 <p>{Proyek.P1}</p>
                 <p>{Proyek.P2}</p>
                 <p>{Proyek.P3}</p>
+                <h2>Dokumentasi</h2>
+                <img src={Proyek.gambar2} alt={Proyek.proker} />
+                <img src={Proyek.gambar3} alt={Proyek.proker} />
+                <img src={Proyek.gambar4} alt={Proyek.proker} />
+                <img src={Proyek.gambar5} alt={Proyek.proker} />
+                <img src={Proyek.gambar6} alt={Proyek.proker} />
+
             </div>
         </div>
     );
