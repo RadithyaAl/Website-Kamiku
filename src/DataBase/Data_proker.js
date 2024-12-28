@@ -15,20 +15,28 @@ export const Proyek_Kerja = [
     {
         "id": "syukuran-wisuda",
         "proker": "Syukuran Wisuda",
-        "P1": "Sebagai bentuk rasa syukur dan ucapan selamat kepada para mahasiswa ITB kuningan yang berhaisil lulus dan wisuda dari ITB.",
+        "P1": "Merupakan bentuk rasa syukur dan ucapan selamat kepada para mahasiswa Kuningan yang berhasil lulus dan wisuda dari ITB.",
         "P2": "",
         "gambar": "/Images/IMG_0323_1.jpg",
         "gambar2" : " ",
         "gambar3" : " ",
+        "gambar4" : " ",
+        "gambar5" : " ",
+        "gambar6" : " ",
+
         "link_to": "/PerpustakaanKamiku" // Internal link to navigate
     },
     {
         "id": "welcoming-party",
-        "P1": "Kegiatan KAMIKU yang bertujuan untuk menyambut mahasiswa baru ITB Kuningan agar dapat saling mengenal satu sama lain.",
+        "P1": "Kegiatan di KAMIKU yang bertujuan untuk menyambut mahasiswa baru ITB Kuningan agar dapat saling mengenal satu sama lain.",
         "P2": "",
         "gambar": "/Images/IMG_0323_1.jpg",
         "gambar2" : " ",
         "gambar3" : " ",
+        "gambar4" : " ",
+        "gambar5" : " ",
+        "gambar6" : " ",
+
         "link_to": "/articles/welcoming-party"
     }
 ];

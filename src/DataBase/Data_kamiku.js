@@ -1,7 +1,8 @@
 export const AboutKAMIKU = [
     {
     "id" : "tentangkamiku",
-    "deskripsi" : "KAMIKU (Keluarga Mahasiswa ITB Kuningan) adalah sebuah komunitas mahasiswa ITB yang berasal dari Kuningan, Jawa Barat. Tempat berkumpul, belajar, berkreasi dan pulang kampung. Rumah kebersamaan"
+    "deskripsi" : "KAMIKU (Keluarga Mahasiswa ITB Kuningan) adalah sebuah komunitas mahasiswa ITB yang berasal dari Kuningan, Jawa Barat. Tempat berkumpul, belajar, berkreasi dan pulang kampung. Rumah kebersamaan.",
+    "sejarah" : "kamiku didirikan pada tahun 2007, blablablablabla"
 }
 ]
 
@@ -16,7 +17,7 @@ export const Proker = [
     {
         "id" : "syukuran-wisuda",
         "proker" : "Syukuran Wisuda",
-        "deskripsi" : "Sebagai bentuk rasa syukur dan ucapan selamat kepada para mahasiswa ITB kuningan yang berhaisil lulus dan wisuda dari ITB.",
+        "deskripsi" : "Merupakan bentuk rasa syukur dan ucapan selamat kepada para mahasiswa Kuningan yang berhasil lulus dan wisuda dari ITB.",
         "gambar" : "/Images/IMG_0001.jpg",
         "link_to" : "/PerpustakaanKamiku"
     },
