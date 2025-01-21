@@ -57,7 +57,7 @@ const Home = () => {
 
         <div className='Pengumuman-Container'>
             <h2>Pengumuman</h2>
-            <a href='/pengumuman' className='Pengumuman-Link'>
+            <a href='https://linktr.ee/kgts2025' className='Pengumuman-Link'>
                 Lihat Pengumuman
             </a>
         </div>
