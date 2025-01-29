@@ -6,7 +6,7 @@ export const Proyek_Kerja = [
         "P2": "KGTS 2025 kembali dilaksanakan pada bulan januari 2025.",
         "gambar": "/Images/IMG_0323_1.jpg",
         "gambar2" : "https://drive.google.com/thumbnail?id=1UWWTf6X3zaKgVIyzoltDozjeBZMwVWbE&sz=w1000",
-        "gambar3" : "https://drive.google.com/thumbnail?id=1zL6uy-KEMT-D1ZgQ6lSvdEhtQgx2VIKy&sz=w1000",
+        "gambar3" : "https://drive.google.com/thumbnail?id=1k4Lft0qDKLpcSvgOpHrIskplWiri0RIA&sz=w1000",
         "gambar4" : "https://drive.google.com/thumbnail?id=1zL6uy-KEMT-D1ZgQ6lSvdEhtQgx2VIKy&sz=w1000",
         "gambar5" : "",
         "gambar6" : "",
